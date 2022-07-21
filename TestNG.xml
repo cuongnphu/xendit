@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite thread-count="1" parallel="tests" name="Xendit API testing" verbose="1">
+    <parameter name="url" value="https://{{base}}"/>
+
+    <test name="QR code test" preserve-order="true">
+        <classes>
+            <class name="com.xendit.test.otp.OtpTest" />
+        </classes>
+    </test>
+
+</suite>
